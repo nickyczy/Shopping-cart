@@ -1,0 +1,68 @@
+{
+	"items": [
+		{
+			"sys": { "id": "1" },
+			"fields": {
+				"title": "Xbox Controller",
+				"price": 50.99,
+				"image": { "fields": { "file": { "url": "./images/product1.jpg" } } }
+			}
+		},
+		{
+			"sys": { "id": "2" },
+			"fields": {
+				"title": "Digital Clock",
+				"price": 12.99,
+				"image": { "fields": { "file": { "url": "./images/product2.jpg" } } }
+			}
+		},
+		{
+			"sys": { "id": "3" },
+			"fields": {
+				"title": "Logitech Webcam",
+				"price": 69.99,
+				"image": { "fields": { "file": { "url": "./images/product3.jpg" } } }
+			}
+		},
+		{
+			"sys": { "id": "4" },
+			"fields": {
+				"title": "Ledger Wallet",
+				"price": 99.99,
+				"image": { "fields": { "file": { "url": "./images/product4.jpg" } } }
+			}
+		},
+		{
+			"sys": { "id": "5" },
+			"fields": {
+				"title": "Mechanical Keyboard",
+				"price": 89.99,
+				"image": { "fields": { "file": { "url": "./images/product5.jpg" } } }
+			}
+		},
+		{
+			"sys": { "id": "6" },
+			"fields": {
+				"title": "PS5",
+				"price": 450.99,
+				"image": { "fields": { "file": { "url": "./images/product6.jpg" } } }
+			}
+		},
+		{
+			"sys": { "id": "7" },
+			"fields": {
+				"title": "Apple Watch Series 10",
+				"price": 450.99,
+				"image": { "fields": { "file": { "url": "./images/product7.jpg" } } }
+			}
+		},
+		{
+			"sys": { "id": "8" },
+			"fields": {
+				"title": "Nintendo Switch",
+				"price": 200.99,
+				"image": { "fields": { "file": { "url": "./images/product8.jpg" } } }
+			}
+		}
+	]
+}
