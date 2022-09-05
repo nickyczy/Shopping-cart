@@ -6,6 +6,7 @@ const client = contentful.createClient({
 });
 const hero = document.querySelector(".hero");
 const hidden = document.querySelector(".hidden");
+const menu = document.querySelector(".menu");
 const navbar = document.querySelector(".navbar");
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
@@ -163,10 +164,13 @@ class UI {
 	}
 
 	showNav() {
-		hidden.style.display = "block";
+		if (hidden) {
+			menu.classList.toggle("hidden");
+		}
 	}
+
 	closeNav() {
-		hidden.style.display = "none";
+		menu.classList.add("hidden");
 	}
 
 	cartLogic() {
