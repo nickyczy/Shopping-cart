@@ -32,6 +32,30 @@ body {
 	z-index: 1;
 }
 
+.hidden {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+
+	padding: 4rem 1.5rem;
+	list-style: none;
+	background-color: rgb(231, 226, 221, 0.3);
+}
+
+.hidden li {
+	margin-top: 0.75rem;
+	cursor: pointer;
+	max-width: 100%;
+	padding: 0.75rem;
+}
+
+.hidden li:hover {
+	background-color: aliceblue;
+	transition: var(--mainTransition);
+}
+
 .navbar-center {
 	width: 100%;
 	max-width: 1440px;

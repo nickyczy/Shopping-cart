@@ -4,7 +4,9 @@ const client = contentful.createClient({
 	// This is the access token for this space. Normally you get both ID and the token in the Contentful web app
 	accessToken: "GZcJtea09z28m-3YZVq2kNTSLVxOACLF8wnwT4-JyAI",
 });
-
+const hero = document.querySelector(".hero");
+const hidden = document.querySelector(".hidden");
+const navbar = document.querySelector(".navbar");
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
@@ -146,6 +148,9 @@ class UI {
 		this.populateCart(cart);
 		cartBtn.addEventListener("click", this.showCart);
 		closeCartBtn.addEventListener("click", this.hideCart);
+		cartOverlay.addEventListener("click", this.hideCart);
+		navbar.addEventListener("click", this.showNav);
+		hero.addEventListener("click", this.closeNav);
 	}
 
 	populateCart(cart) {
@@ -155,6 +160,13 @@ class UI {
 	hideCart() {
 		cartOverlay.classList.remove("transparentBcg");
 		cartDOM.classList.remove("showCart");
+	}
+
+	showNav() {
+		hidden.style.display = "block";
+	}
+	closeNav() {
+		hidden.style.display = "none";
 	}
 
 	cartLogic() {
